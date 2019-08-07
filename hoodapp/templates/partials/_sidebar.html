@@ -1,0 +1,42 @@
+<div class="list-group">
+ 
+  <a href="{%url 'profile' %}" class="list-group-item ">
+    Profile
+  </a>
+
+  <div class="dropdown">
+      <a href="#" class="list-group-item dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Businesses <span class="caret"></span></a>  
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="{% url 'createBusiness' %}">Create Business</a></li>
+        <li><a href="{% url 'allBusinesses' %}">My Businesses</a></li>
+   
+       
+      </div>
+  </div>
+  
+   <div class="dropdown">
+      <a href="#" class="list-group-item dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Forum Posts <span class="caret"></span></a>  
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="{% url 'myPosts' %}">My Posts</a></li>
+        <li><a href="{% url 'createPost' %}">Create Post</a></li>
+    
+        
+        
+      </div>
+  </div>
+
+    <div class="dropdown">
+      <a href="#" class="list-group-item dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">NeighbourHoods <span class="caret"></span></a>  
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="{% url 'index'%}">My Hood</a></li>
+        <li><a href="{% url 'myHood' %}">My Neighbourhoods</a></li>
+        <li><a href="{% url 'createHood' %}">Create Neighbourhoods</a></li>
+        
+        <li><a href="{% url 'changeHood' %}">Change neighbourhoods</a></li>
+        
+        
+      </div>
+  </div>
+
+
+</div>

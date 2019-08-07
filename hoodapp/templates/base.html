@@ -1,0 +1,44 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+      
+    <!-- Icons -->
+    <link href="{% static 'assets/css/nucleo-icons.css' %}" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      
+    <!-- Theme CSS -->
+    <link type="text/css" href="{% static 'assets/css/blk-design-system.min.css' %}" rel="stylesheet">
+   
+    
+    {% if title %}
+    <title>Hood Watch| {{title}}</title>
+    {% else %}
+      <title> Hood Watch</title>
+    {% endif %}
+
+   {% include "partials/_sheets.html" %}
+  </head>
+  <body>
+    {%include 'partials/_navbar.html' %}
+    {% block content%}
+    {%endblock%}
+    
+  
+    {% include "partials/_scripts.html" %}
+    <!-- Core -->
+    <script src="{% static 'assets/js/core/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/core/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/core/bootstrap.min.js' %}"></script>
+
+    <!-- Theme JS -->
+    <script src="{% static 'assets/js/blk-design-system.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
