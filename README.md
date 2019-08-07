@@ -1,6 +1,6 @@
-# Neighbourhood Watch Application
+# Neighbourhood Watch webApp
 
-## By Peter Polle
+## By Collins Muiruri
 
 ## Description
 This is a web application enables users sign up to it and interact with the various happening in their neighbourhood.
@@ -19,7 +19,7 @@ It allows users to:
 
 The following are needed for the application to run on a local computer:
 * python version 3.6
-* Django framework
+* Django framework version 1.11.7
 * Bootstrap v.3
 * Text editor (atom, VS code or sublime text)
 * Web browser
