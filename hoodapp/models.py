@@ -9,6 +9,7 @@ class Neighbourhood(models.Model):
 	'''
 	Model that creates the neighbourhood column in the database
 	'''
+	STATUS_CHOICES = (('uploaded', 'Uploaded'),('confirmed', 'Confirmed'))
 	COUNTY_CHOICES = (
 ('Baringo','Baringo County'),
 ('Bomet','Bomet County'),
@@ -64,6 +65,7 @@ class Neighbourhood(models.Model):
 	location = models.CharField(max_length = 100,choices=COUNTY_CHOICES)
 	population = models.IntegerField()
 	user = models.ForeignKey(User)
+	status = models.CharField(max_length=10,choices=STATUS_CHOICES,default='uploaded')
 
 	def save_hood(self):
 		self.save()
@@ -172,5 +174,3 @@ class Comments(models.Model):
 
 	def __str__(self):
 		return self.comment
-
-
